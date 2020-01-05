@@ -1,0 +1,8 @@
+[Plugin]
+Module=celticmagicbuttonapplet.so
+Name=Celtic Magic Button
+Description=Shuts down your computer
+Authors=tomocafe
+Website=https://github.com/tomocafe/celtic-magic-button
+Icon=celtic-magic-button
+
