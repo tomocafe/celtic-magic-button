@@ -10,7 +10,7 @@ public class CelticMagicButtonApplet : Budgie.Applet
 {
     protected Gtk.Button button;
     protected Gtk.Image icon;
-    private SessionManager? session = null;
+    private GSessionManager? session = null;
 
     public CelticMagicButtonApplet() {
         init_dbus.begin();
@@ -26,7 +26,7 @@ public class CelticMagicButtonApplet : Budgie.Applet
    
     async void init_dbus() {
         try {
-            session = yield Bus.get_proxy(BusType.SESSION, "org.gnome.SessionManager", "org/gnome/SessionManager");
+            session = yield Bus.get_proxy(BusType.SESSION, "org.gnome.SessionManager", "/org/gnome/SessionManager");
         }
         catch (Error e) {
             warning("Failed to fetch GNOME session: %s", e.message);
