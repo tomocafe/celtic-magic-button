@@ -20,10 +20,10 @@ sudo ninja install
 
 ## One-click shut down
 
-By default, pressing the button will yield a confirmation dialog. To bypass this dialog, issue the following command:
+By default, pressing the button will yield a confirmation dialog. To bypass this dialog, issue the following command in the terminal:
 
 ```
-dconf write /org/gnome/gnome-session/logout-prompt true
+dconf write /org/gnome/gnome-session/logout-prompt false
 ```
 
 Use this at your own risk! With this setting, pressing the button will result in your machine immediately shutting down.
