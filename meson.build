@@ -38,5 +38,7 @@ install_data(
   install_dir: icon_dir
 )
 
-meson.add_install_script('post-install.sh')
+if get_option('post_install')
+  meson.add_install_script('post-install.sh')
+endif
 

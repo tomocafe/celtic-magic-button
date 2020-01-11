@@ -1,0 +1,2 @@
+option('post_install', type: 'boolean', value: true, description: 'Run post install script')
+
